@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormTest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg">
+</div>
+<div class="drog">
+    <h2 class="title">
+        <span class="title_line"></span>
+        <span class="title_content">用户注册</span>
+        <span class="title_line"></span>
+    </h2>
+    <table>
+        <tbody>
+            <tr>
+                <td class="td_left">姓名：</td>
+                <td><input class="input1" type="text" placeholder="4-12个字符"></td>
+            </tr>
+            <tr>
+                <td class="td_left">密码：</td>
+                <td><input class="input1" type="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <td class="td_left">确认密码：</td>
+                <td><input class="input1" type="password" placeholder="请再次输入密码"></td>
+            </tr>
+            <tr>
+                <td class="td_left td_adj">性别：</td>
+                <td class="td_adj">
+                    <input id="man" type="radio" name="sex" checked>
+                    <label class="sex" for="man">  男</label>
+                    <input id="woman" type="radio" name="sex">
+                    <label class="sex" for="woman">  女</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">爱好菜系选择：</td>
+                <td>
+                    <input id="food_c" class="flag" type="checkbox" name="food">
+                    <label class="food" for="food_c"></label> 川菜
+                    <input id="food_x" class="flag" type="checkbox" name="food">
+                    <label class="food" for="food_x"></label> 湘菜
+                    <input id="food_y" class="flag" type="checkbox" name="food">
+                    <label class="food" for="food_y"></label> 粤菜
+                    <input id="food_n" class="flag" type="checkbox" name="food">
+                    <label class="food" for="food_n"></label> 卤菜
+                    <input id="food_z" class="flag" type="checkbox" name="food">
+                    <label class="food" for="food_z"></label> 浙菜
+                    <input id="food_h"  class="flag" type="checkbox" name="food">
+                    <label class="food" for="food_h"></label> 徽菜
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">个人简介</td>
+                <td>
+                    <textarea class="personal"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left"></td>
+                <td>
+                    <input class="btn1"type="submit" value="提交">
+                    <input class="btn2" type="reset" value="重置">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

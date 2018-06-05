@@ -1,0 +1,164 @@
+body,h2{
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+#bg{
+    height: 100%;
+    background: url(food.jpg);
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.drog{
+    width: 520px;
+    height: 640px;
+    background: rgba(255,255,255,.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: -320px;
+    border: 1px solid #fff;
+    background-clip: content-box;
+    padding: 10px;
+    border-radius: 10px;
+}
+.drog   h2{
+    display: flex;
+    margin-top: 10px;
+}
+.title_content{
+    text-align: center;
+    font-size: 28px;
+    padding: 0px 20px;
+}
+.title_line{
+    flex:1;
+    font-size: 28px;
+    background: linear-gradient(
+            transparent 49%,
+            #000 49%,
+            #000 51%,
+            transparent 51%
+    );
+}
+table{
+    width: 100%;
+}
+
+.td_left{
+    width: 150px;
+    height: 40px;
+    text-align: right;
+}
+.td_adj{
+    position: relative;
+    top:5px;
+}
+input {
+    outline: none;
+}
+.input1{
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px  solid black;
+}
+.input1:focus{
+    border-bottom-color: red;
+}
+.input1::-webkit-input-placeholder{
+    transition: 0.5s;
+    transform-origin: left top;
+}
+
+.input1::-moz-placeholder{
+    -moz-transition: 0.5s;
+    -moz-transform-origin: left top;
+}
+
+.input1:-ms-input-placeholder{
+    transition: 0.5s;
+    transform-origin: left top;
+}
+.input1:focus::-webkit-input-placeholder{
+    transform: scale(0.7) translateY(-10px);
+}
+
+.input1:focus::-moz-placeholder{
+    transform: scale(0.7) translateY(-10px);
+}
+.input1:focus:-ms-input-placeholder{
+    transform: scale(0.7) translateY(-10px);
+}
+#man,#woman,#food_c,#food_h,#food_n,#food_x,#food_y,#food_z{
+    display:none;
+}
+.sex:before{
+    content: '';
+    display:inline-block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 3px;
+}
+#man+label{
+    margin-right: 30px;
+}
+#man:checked+label:before,#woman:checked+label:before{
+    background: red;
+    background-clip: content-box;
+}
+
+.food{
+    content: '';
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #666;
+    position: relative;
+}
+.flag:checked+.food{
+    border: 1px solid #333;
+}
+.flag:checked+label:before{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 6px;
+    background: #e23924;
+    transform: rotate(-30deg);
+    position: absolute;
+    top:1px;
+    left: 1px;
+}
+.flag:checked+label:after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background: #e23924;
+    transform: rotate(30deg);
+    position: absolute;
+    top:-4px;
+    left: 5px;
+}
+.btn1,.btn2{
+    background: #000;
+    color: #fff;
+    width: 80px;
+}
+.btn1{
+    margin-right: 15px;
+}
+.personal{
+    width:230px;
+    height: 190px;
+}
