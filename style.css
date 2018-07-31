@@ -161,4 +161,5 @@ input {
 .personal{
     width:230px;
     height: 190px;
+	resize: none;
 }
